@@ -1,4 +1,4 @@
-# SSLRetinaReg
+# Lightweight Self-Supervised Technique for Retinal Image Registration
 
 This code repository is directly related to the manuscript currently under consideration:
 > **Title**: SSLRetinaReg: Lightweight Self-Supervised Technique for Retinal Image Registration
