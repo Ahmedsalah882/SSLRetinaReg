@@ -1,18 +1,16 @@
-# Self-Supervised Retinal Image Registration
+# SSLRetinaReg
 
 Official implementation of the paper:
 
-**[Paper Title Here]**
-[Authors]
+**[SSLRetinaReg: Lightweight Self-Supervised Technique for Retinal Image Registration]**
+[Ahmed Shamsia, Tapio Seppänen, and Md Ziaul Hoque]
 [Conference / Journal Name], [Year]
 
 ---
 
 ## Overview
 
-Retinal image registration is an important step in longitudinal disease monitoring, multimodal retinal analysis, image fusion, and clinical decision support. However, accurate registration remains challenging when retinal images contain large deformation, appearance changes, low overlap, or different acquisition conditions.
-
-This repository provides the implementation of our self-supervised retinal image registration framework. The method is designed to learn robust spatial alignment between retinal images without relying on dense ground-truth deformation fields. It supports training, inference, and evaluation of registration performance using standard retinal image registration metrics.
+Retinal image registration is essential for longitudinal analysis, yet it remains challenging due to large spatial displacement, limited overlap, and appearance variation. Recent work has shown that diffusion-based feature representations, combined with correspondence filtering and multi-stage transformation estimation, can achieve strong registration performance. However, diffusion-based feature extraction carries substantial computational cost, and it remains unclear whether such heavyweight representations are necessary for accurate retinal registration. In this work, we investigate whether a lightweight self-supervised convolutional encoder can serve as an effective alternative to diffusion-based features within a correspondence-driven registration pipeline. We propose SSLRetinaReg, which replaces diffusion feature extraction with a DenseNet-121 backbone trained through a masked image reconstruction objective. This self-supervised strategy enables the encoder to learn structurally informative retinal representations without requiring task-specific annotations or large-scale pretrained generative models. The learned features are integrated into a registration pipeline that combines SIFT and random point sampling for spatial coverage, with correspondence refinement achieved through inverse-consistency and transformation-based filtering. Coarse-to-fine alignment is then performed using homography followed by a third-order polynomial transformation. We conducted experiments on the FIRE benchmark dataset to show that the proposed approach achieves state-of-the-art results, with an AUC of 0.903 and a mean landmark error of 2.898. These results suggest that effective retinal image registration does not require computationally expensive generative representations, and that a lightweight self-supervised encoder, when paired with appropriate correspondence filtering and staged transformation estimation, provides a practical and competitive alternative. The code will be available at [https://github.com/sxk2137/Wavelet](https://github.com/Ahmedsalah882/SSLRetinaReg).
 
 ---
 
@@ -205,4 +203,4 @@ This project is released under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-This work builds on prior research in retinal image registration, self-supervised medical image analysis, and deformable image alignment. We thank the authors of the baseline methods and public retinal datasets used in this study.
+Acknowledgments} This research was conducted with the Center for Machine Vision and Signal Analysis in the Faculty of Information Technology and Electrical Engineering at University of Oulu, Finland. 
