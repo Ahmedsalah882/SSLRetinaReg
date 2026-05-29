@@ -17,6 +17,10 @@ Retinal image registration is essential for longitudinal analysis, yet it remain
 
 ---
 
+## Overall Framework
+![](https://github.com/Ahmedsalah882/SSLRetinaReg/blob/main/SSL_Diagram.jpg)
+
+
 ## Main Contributions
 
 * A self-supervised learning framework for retinal image registration.
