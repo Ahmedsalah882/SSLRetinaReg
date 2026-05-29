@@ -4,7 +4,9 @@ This code repository is directly related to the manuscript currently under consi
 > **Title**: [ SSLRetinaReg: Lightweight Self-Supervised Technique for Retinal Image Registration ]
 > 
 > **Authors**: [ Ahmed Shamsia, Tapio Seppänen, and Md Ziaul Hoque ]
-> **Journal**: The Visual Computer (Under Consideration)  
+> 
+> **Journal**: The Visual Computer (Under Consideration)
+> 
 > **Year**: 2026
 
 ---
