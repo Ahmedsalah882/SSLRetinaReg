@@ -5,7 +5,7 @@ This code repository is directly related to the manuscript currently under consi
 > 
 > **Authors**: Ahmed Shamsia, Tapio Seppänen, and Md Ziaul Hoque
 > 
-> **Journal**: The Visual Computer (Under Consideration)
+> **Journal**: Multimedia Systems (Under Consideration)
 > 
 > **Year**: 2026
 
